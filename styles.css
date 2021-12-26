@@ -6,12 +6,21 @@
   padding: 0;
 }
 
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   font-family: "IBM Plex Sans", sans-serif;
+  background-image: url(assets/bg-main-mobile.png);
+  background-repeat: no-repeat;
+  background-position-y: -200px;
 }
 
 .hide-phone {
-  display: none;
+  opacity: 0;
 }
 
 main {
@@ -35,7 +44,7 @@ main {
 /* intro / infos */
 
 #info-intro {
-  margin-top: 64.01px;
+  margin-top: 104px;
   height: 320px;
   width: 327px;
 }
@@ -64,26 +73,42 @@ h1 {
 #cards {
   height: 1024px;
   width: 376.5px;
-  margin-top: 68px;
+  margin-top: 168px;
 }
 
 #dark-card {
   height: 603.5px;
   width: 376.5px;
+  position: relative;
   background: #191826;
+  border-radius: 12px;
+  background-image: url(assets/bg-pattern-2.svg);
+  background-repeat: no-repeat;
+  background-position-x: center;
+}
+
+#illustration-app {
+  width: 208.97px;
+  height: 430px;
+  background-image: url(assets/illustration-app.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  left: 80.67px;
+  top: -60px;
 }
 
 #orange-card {
   height: 546px;
   width: 375px;
   background: #fa7453;
-  top: 400px;
   display: flex;
   flex-direction: column;
 
   align-items: center;
-  transform: translateY(-30%);
+  transform: translateY(-180px);
   margin-bottom: 64px;
+  border-radius: 12px;
 }
 
 h2 {
@@ -147,34 +172,37 @@ h2 {
   margin-bottom: 16px;
 }
 
+#btn-ios:hover {
+  background: #66e2dc;
+}
+
 #btn-android {
   background: #fcfaf9;
 }
 
-.ios-logo{
-    margin-right: 7.8px;
-    transform: translateY(2px);
+#btn-android:hover {
+  background: #ffb964;
+}
+
+.ios-logo {
+  margin-right: 7.8px;
+  transform: translateY(2px);
 }
 
 /* footer */
 
-#footer-logo{
-    margin-left: 0;
-    margin-bottom: 32.01px;
-    
-    
-    }
-#info-contact{
-    height: 105px;
-width: 327px;
-font-size: 16px;
-line-height: 26px;
-color: #191826;
-margin-bottom: 64px;
-
+#footer-logo {
+  margin-left: 0;
+  margin-bottom: 32.01px;
 }
-
-
+#info-contact {
+  height: 105px;
+  width: 327px;
+  font-size: 16px;
+  line-height: 26px;
+  color: #191826;
+  margin-bottom: 64px;
+}
 
 #mail-link:link {
   color: inherit;
@@ -182,7 +210,237 @@ margin-bottom: 64px;
   font-weight: bold;
 }
 
-#socials-bit{
-margin-bottom: 80px;
-margin-right: 20px;
+#socials-bit {
+  margin-bottom: 80px;
+  margin-right: 20px;
 }
+
+.socials {
+  margin-right: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background-image: url(assets/bg-main-tablet.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: -300px;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .hide-phone {
+    opacity: 1;
+  }
+
+  #pattern1 {
+    height: 400px;
+    width: 266.6666564941406px;
+    position: absolute;
+    top: -40px;
+    left: 69%;
+  }
+
+  #info-intro {
+    margin-top: 189px;
+    height: 332px;
+    width: 520px;
+    align-self: flex-start;
+  }
+
+  h1 {
+    height: 192px;
+    width: 520px;
+    margin-left: 39px;
+    font-size: 64px;
+    line-height: 64px;
+    /* or 100% */
+
+    letter-spacing: -0.727273px;
+  }
+
+  #introduction {
+    height: 112px;
+    width: 514px;
+    margin-left: 39px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  #cards {
+    height: 834px;
+    width: 696px;
+
+    position: relative;
+  }
+
+  #dark-card {
+    margin-top: 111px;
+    width: 696px;
+    height: 600px;
+    background-position-y: -50px;
+    background-position-x: 220px;
+  }
+
+  #illustration-app {
+    width: 270.21px;
+    height: 556px;
+    left: 74px;
+    top: -152px;
+  }
+
+  #orange-card {
+    width: 399px;
+    position: absolute;
+    left: 240px;
+    top: 440px;
+    margin-bottom: 0;
+  }
+
+  #footer-logo {
+    margin: 0;
+  }
+  #wrapping-contact {
+    margin-top: 87px;
+    margin-left: 33px;
+    width: 696px;
+    height: 143px;
+  }
+
+  #info-contact {
+    height: 79px;
+    width: 366px;
+    margin-bottom: 0;
+    margin-right: 210px;
+  }
+
+  #footer-logo {
+    margin-bottom: 31.02px;
+  }
+  .wrapping {
+    display: flex;
+    justify-items: center;
+    align-content: center;
+  }
+
+  #socials-bit {
+    display: flex;
+    align-items: center;
+    width: 130px;
+    margin: 0;
+  }
+
+  .socials:last-child {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  #pattern1 {
+    width: 312px;
+    height: 468px;
+    position: absolute;
+    left: 1128px;
+  }
+
+  #header > .logo-equalizer {
+    margin-top: 61.99px;
+    margin-left: 166.15px;
+    margin-bottom: 127.01px;
+  }
+
+  h1 {
+    width: 1015px;
+    height: 176px;
+    margin-left: 165px;
+    font-size: 88px;
+    line-height: 88px;
+    /* or 100% */
+
+    letter-spacing: -1px;
+  }
+
+  #introduction {
+    width: 825px;
+    height: 102px;
+    margin-top: 40px;
+    margin-left: 164.5px;
+    font-size: 20px;
+    line-height: 34px;
+    /* or 170% */
+
+    margin-bottom: 0;
+  }
+
+#cards{
+  width: 1119px;
+height: 928px;
+}
+
+  #dark-card{
+    width: 1110px;
+height: 600px;
+background-position-x: 300px;
+  }
+
+  #illustration-app{
+    width: 280px;
+height: 606px;
+left: 102px;
+  }
+
+  #orange-card{
+    width: 446px;
+height: 625px;
+left: 569px;
+top: 390px;
+  }
+
+h2{
+  width: 333px;
+height: 52px;
+margin-top: 58px;
+
+font-style: normal;
+font-weight: bold;
+font-size: 40px;
+line-height: 52px;
+}  
+#premium-eq{
+  width: 333px;
+height: 170px;
+margin-top: 22px;
+font-family: IBM Plex Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 34px;
+/* or 170% */
+}
+
+
+#price{
+  width: 165px;
+height: 52px;
+margin-bottom: 46px;
+}
+
+.btns-download{
+  width: 333px;
+height: 61px;
+}
+#wrapping-contact{
+  width: 1110px;
+height: 79px;
+margin-left: 0;
+display: flex;
+}
+
+#footer-logo{
+  width: 146.09px;
+height: 32px;
+margin-right: 137px;
+}
+
+}
+
