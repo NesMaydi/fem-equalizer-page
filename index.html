@@ -1,33 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Equalizer landing page</title>
-</head>
-<body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
 
-  We make your music sound extraordinary.
+    <title>Frontend Mentor | Equalizer landing page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <section id="header">
+        <img class="logo-equalizer" src="assets/logo.svg" alt="logo" />
 
-  A system audio equalizer specifically designed for Android and iOS. Freely tune the 
-  way your music sounds with a professional grade parametric EQ & volume mixer. Control 
-  bass, mids, treble, gain control, reverb, and more!
+        <div class="hide-phone">
+          <img src="assets/bg-pattern-1.svg" alt="" id="pattern1" />
+        </div>
+      </section>
 
-  Premium EQ
+      <section id="info-intro">
+        <h1>We make your music sound extraordinary.</h1>
 
-  Get expert-level control with a robust equalizer, volume mixer, and spatial audio. Take 
-  your listening experience to a whole new level and access all our incredible features!
+        <p id="introduction">
+          A system audio equalizer specifically designed for Android and iOS.
+          Freely tune the way your music sounds with a professional grade
+          parametric EQ & volume mixer. Control bass, mids, treble, gain
+          control, reverb, and more!
+        </p>
+      </section>
 
-  $4 / month
+      <section id="cards">
+        <div id="dark-card"></div>
 
-  iOS Download
-  Android Download
+        <div id="orange-card">
+          <h2>Premium EQ</h2>
+          <p id="premium-eq">
+            Get expert-level control with a robust equalizer, volume mixer, and
+            spatial audio. Take your listening experience to a whole new level
+            and access all our incredible features!
+          </p>
 
-  All rights reserved © Equalizer 2021
-  Have any problems? Contact us via social media or email us at equalizer@example.com
+          <p id="price"><span id="dollars"> $4 </span> / month</p>
 
-</body>
+          <div class="btns-download" id="btn-ios">
+            <p id="ios">
+              <span
+                ><img class="ios-logo" src="assets/icon-apple.svg" alt=""
+              /></span>
+              iOS Download
+            </p>
+          </div>
+          <div class="btns-download" id="btn-android">
+            <p id="android">
+              <span>
+                <img class="ios-logo" src="assets/icon-android.svg" alt="" />
+              </span>
+              Android Download
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div id="wrapping-contact">
+        <div id="contact-bit">
+          <img class="logo-equalizer" id="footer-logo" src="assets/logo.svg" alt="logo" />
+          <p id="info-contact">
+            All rights reserved © Equalizer 2021 
+            <br> Have any problems? Contact us
+            via social media or email us at
+            <a id="mail-link" href="mailto:equalizer@example.com"
+              >equalizer@example.com</a
+            >
+          </p>
+        </div>
+
+        <div id="socials-bit">
+          <a href="#" class="socials"
+            ><img src="assets/icon-facebook.svg" alt=""
+          /></a>
+          <a href="#" class="socials"
+            ><img src="assets/icon-instagram.svg" alt=""
+          /></a>
+          <a href="#" class="socials"
+            ><img src="assets/icon-twitter.svg" alt=""
+          /></a>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>

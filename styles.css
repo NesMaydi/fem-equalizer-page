@@ -1,0 +1,188 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+.hide-phone {
+  display: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* header */
+#header {
+  height: 32px;
+  width: 146.0926971435547px;
+  align-self: flex-start;
+}
+
+.logo-equalizer {
+  margin-top: 39.9px;
+  margin-left: 24.15px;
+}
+/* intro / infos */
+
+#info-intro {
+  margin-top: 64.01px;
+  height: 320px;
+  width: 327px;
+}
+
+h1 {
+  height: 144px;
+  width: 327px;
+  font-size: 40px;
+  line-height: 48px;
+
+  letter-spacing: -0.454545px;
+
+  color: #191826;
+  margin-bottom: 20px;
+}
+
+#introduction {
+  height: 156px;
+  width: 327px;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+/* Cards sections */
+
+#cards {
+  height: 1024px;
+  width: 376.5px;
+  margin-top: 68px;
+}
+
+#dark-card {
+  height: 603.5px;
+  width: 376.5px;
+  background: #191826;
+}
+
+#orange-card {
+  height: 546px;
+  width: 375px;
+  background: #fa7453;
+  top: 400px;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  transform: translateY(-30%);
+  margin-bottom: 64px;
+}
+
+h2 {
+  height: 40px;
+  width: 302px;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 40px;
+
+  color: #fcfaf9;
+  margin-top: 48px;
+}
+
+#premium-eq {
+  margin-top: 18px;
+  height: 140px;
+  width: 302px;
+  margin-bottom: 36px;
+  font-size: 18px;
+  line-height: 28px;
+  color: #fcfaf9;
+}
+
+#price {
+  height: 52px;
+  width: 165px;
+  font-size: 18px;
+  line-height: 28px;
+  color: #fcfaf9;
+  align-self: flex-start;
+  margin-left: 42px;
+  margin-bottom: 32px;
+}
+
+#dollars {
+  font-weight: bold;
+  font-size: 65px;
+  line-height: 52px;
+}
+
+.btns-download {
+  width: 296px;
+  height: 61px;
+  border-radius: 12px;
+  outline: none;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: -0.18px;
+  font-weight: bold;
+}
+
+#btn-ios {
+  background: #191826;
+  color: #fcfaf9;
+  margin-bottom: 16px;
+}
+
+#btn-android {
+  background: #fcfaf9;
+}
+
+.ios-logo{
+    margin-right: 7.8px;
+    transform: translateY(2px);
+}
+
+/* footer */
+
+#footer-logo{
+    margin-left: 0;
+    margin-bottom: 32.01px;
+    
+    
+    }
+#info-contact{
+    height: 105px;
+width: 327px;
+font-size: 16px;
+line-height: 26px;
+color: #191826;
+margin-bottom: 64px;
+
+}
+
+
+
+#mail-link:link {
+  color: inherit;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#socials-bit{
+margin-bottom: 80px;
+margin-right: 20px;
+}
